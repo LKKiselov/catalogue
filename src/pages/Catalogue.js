@@ -1,21 +1,21 @@
 import storeItems from "../data/items.json";
 
 import StoreItem from "../components/StoreItem.js";
-import { Container } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 export function Catalogue() {
   return (
     <>
       <h1>Products</h1>
-      <Container className="fluid">
+      <Row md={2} xs={1} lg={3} className="g-3">
         {storeItems.map((item) => {
           return (
-            <div key={item.id}>
+            <Col key={item.id}>
               <StoreItem {...item}></StoreItem>
-            </div>
+            </Col>
           );
         })}
-      </Container>
+      </Row>
     </>
   );
 }
