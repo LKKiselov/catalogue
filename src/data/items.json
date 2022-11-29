@@ -4,25 +4,25 @@
     "sku": "481B",
     "name": "Memory Dreamer",
     "product-Barcode": "468451348",
-    "price": { "gbp": 19.99, "euro": 18.99, "dollar": 18.99 },
+    "price": 19.99,
     "imgUrl": "/imgs/481b.jpg"
   },
   {
     "id": 2,
     "name": "Memory Dreamer",
-    "price": { "gbp": 19.99, "euro": 18.99, "dollar": 18.99 },
+    "price": 19.99,
     "imgUrl": "/imgs/481g.jpg"
   },
   {
     "id": 3,
     "name": "Memory Dreamer",
-    "price": { "gbp": 19.99, "euro": 18.99, "dollar": 18.99 },
+    "price": 19.99,
     "imgUrl": "/imgs/481o.jpg"
   },
   {
     "id": 4,
     "name": "Memory Dreamer",
-    "price": { "gbp": 19.99, "euro": 18.99, "dollar": 18.99 },
+    "price": 19.99,
     "imgUrl": "/imgs/481y.jpg"
   }
 ]

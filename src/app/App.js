@@ -1,22 +1,16 @@
-import { Routes, Route } from "react-router-dom";
-import { BrowserRouter } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { Catalogue } from "../pages/Catalogue";
-import { PendingOrders } from "../pages/PendingOrders";
+import { SearchField } from "../components/SearchField";
 import { Navbar } from "../components/Navbar";
 function App() {
   return (
     <>
       {" "}
-      <BrowserRouter>
-        <Navbar />
-        <Container style={{ marginTop: "30px" }}>
-          <Routes>
-            <Route path="/" element={<Catalogue />}></Route>
-            <Route path="/orders" element={<PendingOrders />}></Route>
-          </Routes>
-        </Container>{" "}
-      </BrowserRouter>
+      <Navbar />
+      <Container>
+        <SearchField />
+        <Catalogue />
+      </Container>{" "}
     </>
   );
 }

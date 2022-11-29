@@ -9,7 +9,7 @@ export default function StoreItem({
   productBarcode,
 }) {
   return (
-    <Card className="text-center p-4">
+    <Card className="text-center p-4 ">
       <Card.Title>
         <span className="fs-4">{name}</span>
       </Card.Title>
@@ -19,7 +19,7 @@ export default function StoreItem({
         style={{ objectFit: "cover" }}
       ></Card.Img>
       <Card.Body className="d-flex flex-column">
-        <span>SRP {price.gbp}</span>
+        <span>SRP {price}</span>
       </Card.Body>
     </Card>
   );
