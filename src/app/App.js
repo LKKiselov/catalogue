@@ -10,7 +10,7 @@ function App() {
       {" "}
       <BrowserRouter>
         <Navbar />
-        <Container>
+        <Container style={{ marginTop: "30px" }}>
           <Routes>
             <Route path="/" element={<Catalogue />}></Route>
             <Route path="/orders" element={<PendingOrders />}></Route>

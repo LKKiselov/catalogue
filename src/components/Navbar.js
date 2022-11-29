@@ -1,19 +1,16 @@
-import { Container, Nav, Navbar as NavbarBs } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import "./navbar.css";
 export function Navbar() {
   return (
-    <NavbarBs sticky="top" className="bg-white shadow-sm mb-3">
-      <Container>
-        <Nav className="me-auto">
-          <Nav.Link to="/" as={NavLink}>
-            Home
-          </Nav.Link>
-          <Nav.Link to="/orders" as={NavLink}>
-            Orders
-          </Nav.Link>
-          {/* <Button></Button> */}
-        </Nav>
-      </Container>
-    </NavbarBs>
+    <Nav sticky="top" style={{ backgroundColor: "#292931" }}>
+      <Nav.Link to="/" as={NavLink}>
+        <img src={"/imgs/logo.png"} height="100" alt="Go-logo"></img>
+      </Nav.Link>{" "}
+      <div className="navbar-text">
+        <h1>Go Travel</h1>
+        <p>Exclusive 2023 Catalogue Lines</p>
+      </div>
+    </Nav>
   );
 }

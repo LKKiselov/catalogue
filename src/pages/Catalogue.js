@@ -6,7 +6,6 @@ import { Row, Col } from "react-bootstrap";
 export function Catalogue() {
   return (
     <>
-      <h1>Products</h1>
       <Row md={2} xs={1} lg={3} className="g-3">
         {storeItems.map((item) => {
           return (

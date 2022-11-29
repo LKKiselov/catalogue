@@ -1,26 +1,28 @@
 [
   {
     "id": 1,
-    "name": "Book",
-    "price": 10.99,
-    "imgUrl": "/imgs/book.jpg"
+    "sku": "481B",
+    "name": "Memory Dreamer",
+    "product-Barcode": "468451348",
+    "price": { "gbp": 19.99, "euro": 18.99, "dollar": 18.99 },
+    "imgUrl": "/imgs/481b.jpg"
   },
   {
     "id": 2,
-    "name": "Computer",
-    "price": 1199,
-    "imgUrl": "/imgs/computer.jpg"
+    "name": "Memory Dreamer",
+    "price": { "gbp": 19.99, "euro": 18.99, "dollar": 18.99 },
+    "imgUrl": "/imgs/481g.jpg"
   },
   {
     "id": 3,
-    "name": "Banana",
-    "price": 1.05,
-    "imgUrl": "/imgs/banana.jpg"
+    "name": "Memory Dreamer",
+    "price": { "gbp": 19.99, "euro": 18.99, "dollar": 18.99 },
+    "imgUrl": "/imgs/481o.jpg"
   },
   {
     "id": 4,
-    "name": "Car",
-    "price": 14000,
-    "imgUrl": "/imgs/car.jpg"
+    "name": "Memory Dreamer",
+    "price": { "gbp": 19.99, "euro": 18.99, "dollar": 18.99 },
+    "imgUrl": "/imgs/481y.jpg"
   }
 ]
