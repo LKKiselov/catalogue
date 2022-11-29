@@ -5,7 +5,12 @@ export function Navbar() {
   return (
     <Nav sticky="top" style={{ backgroundColor: "#292931" }}>
       <Nav.Link to="/" as={NavLink}>
-        <img src={"/imgs/logo.png"} height="100" alt="Go-logo"></img>
+        <img
+          src={"/imgs/logo.png"}
+          height="100"
+          alt="Go-logo"
+          className="logo"
+        ></img>
       </Nav.Link>{" "}
       <div className="navbar-text">
         <h1>Go Travel</h1>
