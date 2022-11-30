@@ -1,14 +1,13 @@
 import { Container } from "react-bootstrap";
 import { Catalogue } from "../pages/Catalogue";
-import { SearchField } from "../components/SearchField";
-import { Navbar } from "../components/Navbar";
+
+import { Navbar } from "../components/Navbar/Navbar";
 function App() {
   return (
     <>
       {" "}
-      <Navbar />
+      <Navbar sticky="top" />
       <Container>
-        <SearchField />
         <Catalogue />
       </Container>{" "}
     </>

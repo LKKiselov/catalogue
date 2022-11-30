@@ -7,7 +7,7 @@ export function Navbar() {
         src={"/imgs/logo.png"}
         height="100"
         alt="Go-logo"
-        className="logo"
+        className="logo p-3"
       ></img>
 
       <div className="navbar-text">
