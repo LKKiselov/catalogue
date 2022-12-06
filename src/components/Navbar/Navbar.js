@@ -2,7 +2,7 @@ import { Nav } from "react-bootstrap";
 import "./navbar.css";
 export function Navbar() {
   return (
-    <Nav style={{ backgroundColor: "#292931" }}>
+    <Nav style={{ backgroundColor: "#292931", color: "#FFFFFF" }}>
       <img
         src={"/imgs/logo.png"}
         height="100"

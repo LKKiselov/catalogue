@@ -1,29 +1,41 @@
+import "./Catalogue.css";
+import { Row, Col, Form, Button, Card } from "react-bootstrap";
+import { useState, useEffect } from "react";
+
 import { storeItems } from "../data/items";
-import { Card } from "react-bootstrap";
-import "./Catalogues.css";
-import { Row, Col, Form } from "react-bootstrap";
-import { useState } from "react";
 export function Catalogue() {
-  const [search, setSearcher] = useState("");
-  console.log(search);
+  const [search, setSearch] = useState("");
+
   return (
     <>
+      <Button
+        variant="primary"
+        size="lg"
+        value="locks"
+        onClick={(e) => {
+          setSearch("pillow");
+        }}
+      >
+        Pillows
+      </Button>{" "}
       <Form>
         <Form.Group controlId="search">
           <Form.Control
             type="search"
             className="search-field"
             placeholder="Search For Item"
-            onChange={(e) => setSearcher(e.target.value)}
+            onChange={(e) => setSearch(e.target.value)}
           />
         </Form.Group>
       </Form>
-      <Row md={2} xs={1} lg={3} className="g-3">
+      <Row md={4} xs={3} lg={5} className="g-3">
         {storeItems
           .filter((item) => {
             return search.toLowerCase() === ""
               ? item
-              : item.name.toLowerCase().includes(search);
+              : item.name.toLowerCase().includes(search) ||
+                  item.category.toLowerCase().includes(search) ||
+                  item.sku.toLowerCase().includes(search);
           })
           .map((item) => (
             <Col key={item.id}>

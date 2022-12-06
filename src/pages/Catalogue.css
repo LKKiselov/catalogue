@@ -1,7 +1,8 @@
-.search-field {
-  width: 400px;
+#search {
   margin: 30px auto;
   border-radius: 20px;
   text-align: center;
   height: 40px;
+  width: 450px;
+  cursor: pointer;
 }
