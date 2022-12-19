@@ -27,15 +27,23 @@ export function Catalogue() {
                 {item}
               </button>
             );
-          })}
+          })}{" "}
+          <button
+            className="cat-button"
+            variant="primary"
+            size="lg"
+            onClick={(e) => setSearch("")}
+          >
+            Show All
+          </button>
         </div>
-        <Form >
+        <Form>
           <Form.Group controlId="search">
             <Form.Control
               type="search"
               className="search-field"
               placeholder="Search For Item"
-              onChange={(e) => setSearch(e.target.value)} 
+              onChange={(e) => setSearch(e.target.value)}
             />
           </Form.Group>
         </Form>
