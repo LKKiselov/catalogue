@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       {" "}
-      <Navbar sticky="top" />
+      <Navbar />
       <Container>
         <Catalogue />
       </Container>{" "}

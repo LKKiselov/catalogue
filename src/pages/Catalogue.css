@@ -6,3 +6,38 @@
   width: 450px;
   cursor: pointer;
 }
+
+.catalogue-container {
+  margin-top: 120px;
+}
+
+.category-btn-container {
+  position: fixed;
+  top: 120px;
+  left: 50px;
+  width: 100px;
+  display: block;
+}
+
+.cat-button {
+  margin: 10px;
+  width: 100px;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  background-color: #292931;
+  color: white;
+
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+
+.cat-button:focus {
+  background-color: white;
+  color: #292931;
+}
+
+.card-container {
+  display: inline-block;
+
+
+}

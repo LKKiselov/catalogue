@@ -1,10 +1,14 @@
 import React from "react";
 
 import App from "./app/App";
-
+import "./App.css";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+import { Provider } from "react-redux";
+
+import store from "./app/store";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
