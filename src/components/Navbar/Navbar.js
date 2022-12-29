@@ -1,6 +1,5 @@
 import { Nav } from "react-bootstrap";
 import "./navbar.css";
-import { SearchField } from "../SearchField/SearchField";
 export function Navbar() {
   return (
     <Nav
